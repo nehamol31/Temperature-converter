@@ -1,65 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
-
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     background-image: url('image/bg.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    font-family: 'Century Gothic', Arial, sans-serif;
 }
 
-header {
+.converter-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 350px;
     width: 100%;
-    background: darkgreen;
-    padding: 20px 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
     text-align: center;
 }
 
-.main-content {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    width: 100%;
-    flex: 1; 
-    margin-top: 80px; 
-}
-
 h1 {
-    color: white;
-    margin: 0;
-    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #ffffff; 
+    margin-bottom: 20px;
 }
 
-.converter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #333;  
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5);  
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 350px;  
-    height: 350px;  
-    margin-left: 20px; 
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-input, select, button {
-    margin: 10px;
+label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
     padding: 10px;
-    font-size: 1em;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;  
-    color: blanchedalmond;
-    word-wrap: break-word;  
+@media (max-width: 400px) {
+    .converter-box {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
 }
